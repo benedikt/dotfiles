@@ -18,6 +18,10 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 filetype plugin indent on
 
+" Pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
 " Syntax highlighting
 syntax on
 colorscheme sunburst
