@@ -22,6 +22,8 @@ filetype plugin indent on
 call pathogen#infect()
 call pathogen#helptags()
 
+runtime macros/matchit.vim " required by textobj-rubyblock
+
 " Syntax highlighting
 syntax on
 colorscheme sunburst
