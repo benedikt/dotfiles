@@ -1,5 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
+export EDITOR=vim
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 umask 022
