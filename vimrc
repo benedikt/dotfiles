@@ -10,6 +10,10 @@ set wildmenu
 " Remove trailing whitespace when saving
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Invisible characters
+set list
+set listchars=tab:▸\ ,trail:·,nbsp:·
+
 set nocompatible               " be iMproved
 filetype off                   " required!
 filetype plugin indent on
