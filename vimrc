@@ -3,6 +3,8 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+let mapleader="#"
+
 " Auto completion
 set wildmode=longest,list,full
 set wildmenu
