@@ -59,3 +59,5 @@ set statusline+=%L    " Total lines
 " Write no backup / swap files
 set nobackup
 set noswapfile
+
+map <silent> <Leader>rt :!bundle list --paths=true \| xargs ctags --extra=+f --exclude=.git --exclude=log -R *<CR><CR>
