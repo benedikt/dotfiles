@@ -29,9 +29,8 @@ function parse_git_branch {
 
 export PS1='\[\033[01;32m\]\u@\h \[\033[11;33m\]$(parse_pairing)\[\033[01;34m\]\W $(parse_git_branch) \[\033[01;34m\]\$ \[\033[00m\]'
 
-source ~/.git_completion.bash
-source ~/.bash/completion-ruby/completion-ruby-all
-
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
 
 source ~/.bashrc
