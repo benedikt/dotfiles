@@ -12,3 +12,4 @@ alias unhitch='hitch -u'
 
 hitch
 
+export PATH="/usr/local/heroku/bin:$PATH"
