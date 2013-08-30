@@ -13,6 +13,8 @@ alias gist=jist
 keychain ~/.ssh/id_rsa ~/.ssh/id_rsa_4096 ~/.ssh/ec2
 . ~/.keychain/$HOSTNAME-sh
 
+eval "$(rbenv init -)"
+
 function parse_pairing {
   [[ $GIT_AUTHOR_NAME != "" ]] && echo '[pair] '
 }
