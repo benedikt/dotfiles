@@ -8,7 +8,15 @@ hitch() {
   if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
 }
 alias unhitch='hitch -u'
-# Uncomment to persist pair info between terminal instances
+
+function explain {
+  url="http://explainshell.com/explain/$1?args="
+  shift;
+  for i in "$@"; do
+    url=$url"$i""+"
+  done
+  open $url
+}
 
 hitch
 
