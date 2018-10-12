@@ -8,10 +8,6 @@ umask 022
 export LS_OPTIONS='-G'
 alias ls='ls $LS_OPTIONS'
 alias git=hub
-alias gist=jist
-
-keychain ~/.ssh/id_rsa ~/.ssh/id_rsa_4096 ~/.ssh/ec2
-. ~/.keychain/$HOSTNAME-sh
 
 eval "$(rbenv init -)"
 
@@ -29,8 +25,3 @@ function parse_git_branch {
 
 export PS1='\[\033[01;32m\]\u@\h \[\033[11;33m\]$(parse_pairing)\[\033[01;34m\]\W $(parse_git_branch) \[\033[01;34m\]\$ \[\033[00m\]'
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
-source ~/.bashrc
