@@ -1,5 +1,5 @@
 [user]
-	email = benedikt@synatic.net
+	email = benedikt@benediktdeicke.com
 	name = Benedikt Deicke
 [push]
   default = current
@@ -37,3 +37,7 @@
 	tool = Kaleidoscope
 [core]
 	excludesfile = /Users/benedikt/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
