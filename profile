@@ -1,4 +1,7 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 export EDITOR=vim
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
@@ -16,7 +19,7 @@ function parse_pairing {
 }
 
 function parse_git_dirty {
- [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
+ [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
 
 function parse_git_branch {
